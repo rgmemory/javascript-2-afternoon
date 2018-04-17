@@ -16,6 +16,12 @@
 
 //Code here
 
+var me = {
+  name: "Russell",
+  age: 35
+}
+// alert(me.name);
+
 
 
 ////////// PROBLEM 2 //////////
@@ -27,6 +33,17 @@
 
 //Code here
 
+var favoriteThings = {
+  band: "Eagles",
+  food: "pizza",
+  person: "me",
+  book: "win friends",
+  movie: "Star Wars",
+  holiday: "Thanksgiving"
+}
+
+
+
 
 
 /*
@@ -35,6 +52,9 @@
 
 //Code here
 
+favoriteThings.car = "bmw";
+favoriteThings.brand = "google"
+
 
 
 /*
@@ -42,6 +62,8 @@
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -56,6 +78,13 @@
 */
 
 //Code here
+let backPack = {
+
+}
+
+var item = "firstPocket"
+backPack[item] = "chapstick"
+backPack.color = "black"
 
 
 
@@ -64,6 +93,8 @@
 */
 
 //Code here
+
+// alert(backPack);
 
 
 
@@ -74,6 +105,8 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+
+console.log(backPack)
 
 
 
@@ -98,6 +131,11 @@ var user2 = {
 
 //Code Here
 
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
+
+
+
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -110,6 +148,18 @@ var user2 = {
 
 //Code Here
 
+let methodCollection = {
+  alertHello: function(){
+    alert('hello');
+  },
+
+  logHello: function(){
+    console.log('hello');
+    
+  }
+  
+}
+
 
 
 /*
@@ -121,11 +171,16 @@ var user2 = {
 
 
 
+
+
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
+
+// methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -138,6 +193,16 @@ var user2 = {
 
 //Code Here
 
+let makePerson = (name, birthday, ssn) => {
+  let personObj = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+
+  return personObj;
+}
+
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +213,15 @@ var user2 = {
 */
 
 //Code Here
+
+var makeCard = (cardNumber, expirationDate, securityCode) => {
+  let creditCard = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+
+  return creditCard;
+}
 
 
